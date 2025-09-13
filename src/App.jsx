@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from
 import Product from "./pages/Product";
 import Pricing from "./pages/Pricing";
 import Homepage from "./pages/Homepage";
-import PageNotFound from "./pages/PageNotFound";
+import PageNotFound from "./pages/PageNotFound.jsx";
 
 function App() {
   return (
