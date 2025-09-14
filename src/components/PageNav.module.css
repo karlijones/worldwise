@@ -1,4 +1,11 @@
 .nav {
+    padding: 1rem;
+    background-color: #f0f0f0;
+    
+}
+
+.nav ul {
+    list-style: none;
     display: flex;
     justify-content: space-between;
-}
+    }
