@@ -5,14 +5,12 @@ function Homepage() {
   return (
     <div>
       <PageNav />
-      <h1>
-        WorldWise
-        </h1>
+      <h1>WorldWise</h1>
 
-      <NavLink to="/pricing">Pricing</NavLink>
+      <NavLinkLink to="/app">Go to the app</NavLinkLink>
       
     </div>
-  )
+  );
   
 }
 
