@@ -1,8 +1,8 @@
 function PageNav() {
     return (
-        <div>
+        <nav>
             
-        </div>
+        </nav>
     )
 }
 
