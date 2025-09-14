@@ -1,6 +1,10 @@
-function Product() {
+import PageNav from "../components/PageNav";
+
+function PageNotFound() {
   return (
-    <div>PageNotFound</div>
+    <div>
+        <PageNav /> NotFound :
+    </div>
   )
 }
 
