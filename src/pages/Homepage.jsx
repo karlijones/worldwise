@@ -1,14 +1,15 @@
 function Homepage() {
-  return 
+  return (
     <div>
 
       <h1>
         WorldWise
         </h1>
 
-      <a href="/pricing">Pricing</a>
+      <Link to="/pricing">Pricing</Link>
       
     </div>
+  )
   
 }
 
