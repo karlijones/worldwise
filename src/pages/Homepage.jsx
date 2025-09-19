@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import PageNav from "../components/PageNav";
 
 function Homepage() {
@@ -7,7 +7,7 @@ function Homepage() {
       <PageNav />
       <h1>WorldWise</h1>
 
-      <NavLinkLink to="/app">Go to the app</NavLinkLink>
+      <Link to="/app">Go to the app</Link>
       
     </div>
   );
