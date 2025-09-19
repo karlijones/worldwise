@@ -1,8 +1,8 @@
-import styles from './AppNav.module.css';
+import { nav } from './AppNav.module.css';
 
 function AppNav() {
     return (
-        <nav>App navigation</nav>
+        <nav classname={nav}>App navigation</nav>
     );
 }
 
