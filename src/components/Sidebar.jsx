@@ -13,7 +13,9 @@ function Sidebar() {
 
             <p>List of cities</p>
             <footer className={styles.footer}></footer> 
-            <p className={styles.copyright}></p>           
+            <p className={styles.copyright}>&copy; Copyright {new Date().getFullYear()} WorldWise
+            by WorldWise Inc.
+            </p>           
         </div>
     );
 }
