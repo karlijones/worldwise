@@ -12,7 +12,8 @@ function Sidebar() {
             <AppNav />
 
             <p>List of cities</p>
-            <footer className=""></footer>            
+            <footer className={styles.footer}></footer> 
+            <p className={styles.copyright}></p>           
         </div>
     );
 }
