@@ -67,3 +67,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+"importCSSModule": {
+  "prefix": "csm",
+  "scope": "javascript,typescript,javascriptreact",
+  "body": ["import styles from './${TM_FILENAME_BASE}.module.css';", ""]
+   "description": "Import a CSS module as 'styles'"
+},
