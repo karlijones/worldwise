@@ -73,3 +73,10 @@ button:focus-visible {
   "body": ["import styles from './${TM_FILENAME_BASE}.module.css';", ""]
    "description": "Import a CSS module as 'styles'"
 },
+
+"importCSSModule": {
+  "prefix": "csm",
+  "scope": "javascript,typescript,javascriptreact",
+  "body": ["import styles from './${TM_FILENAME_BASE}.module.css';", ""]
+   "description": "Import a CSS module as 'styles'"
+},
