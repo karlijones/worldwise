@@ -1,7 +1,7 @@
 function Map() {
     return (
-        <div>
-            
+        <div className={}>
+           Map 
         </div>
     )
 }
