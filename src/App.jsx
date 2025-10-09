@@ -17,6 +17,7 @@ function App() {
       <Route path="login" element={<Login />}/>
       <Route path="app" element={<AppLayout />}>
         <Route path='cities' element={<p>List of Cities</p>}/>
+        <Route path='countries' element={<p>List of Countries</p>}/>
       </Route>
       <Route path="*" element={<PageNotFound />}/>
     </Routes >
