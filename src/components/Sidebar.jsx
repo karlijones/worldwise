@@ -11,7 +11,8 @@ function Sidebar() {
             <Logo />
             <AppNav />
 
-            <p>List of cities</p>
+            <Outlet />
+            
             <footer className={styles.footer}></footer> 
             <p className={styles.copyright}>&copy; Copyright {new Date().getFullYear()} WorldWise
             by WorldWise Inc.
