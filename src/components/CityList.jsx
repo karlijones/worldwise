@@ -2,10 +2,9 @@ import styles from './CityList.module.css'
 
 function CityList() {
     return (
-        <div>
-            
-        </div>
+           <ul style={styles.cityList}>LIST
+            </ul> 
     )
 }
 
-export default CityList
+export default CityList;
