@@ -9,7 +9,9 @@ import PageNotFound from "./pages/PageNotFound";
 import CityList from "./components/CityList";
 import { useState } from "react";
 
-
+function App() {
+  const [cities, setCities] = useState ({})
+}
 
 function App() {
   return (
