@@ -11,6 +11,7 @@ import { useState } from "react";
 
 function App() {
   const [cities, setCities] = useState ({})
+  const [isLoading, setIsLoading] = useState(false)
 }
 
 function App() {
