@@ -7,12 +7,16 @@ import Login from "./pages/Login";
 import AppLayout from "./pages/AppLayout";
 import PageNotFound from "./pages/PageNotFound";
 import CityList from "./components/CityList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [cities, setCities] = useState ({})
   const [isLoading, setIsLoading] = useState(false)
 }
+
+useEffect(function () {
+  async function fetchCities() {
+}, []);
 
 function App() {
   return (
