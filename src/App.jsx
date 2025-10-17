@@ -9,6 +9,8 @@ import PageNotFound from "./pages/PageNotFound";
 import CityList from "./components/CityList";
 import { useEffect, useState } from "react";
 
+const BASE_URL = 'http://localhost:9000'
+
 function App() {
   const [cities, setCities] = useState ({})
   const [isLoading, setIsLoading] = useState(false)
@@ -16,7 +18,7 @@ function App() {
 
 useEffect(function () {
   async function fetchCities() {
-    const res = await fetch('')
+    const res = await fetch('${BASE_URL}/cities')
 }, []);
 
 function App() {
