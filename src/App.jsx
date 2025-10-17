@@ -16,6 +16,7 @@ function App() {
 
 useEffect(function () {
   async function fetchCities() {
+    const res = await fetch('')
 }, []);
 
 function App() {
