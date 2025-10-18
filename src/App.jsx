@@ -8,6 +8,7 @@ import AppLayout from "./pages/AppLayout";
 import PageNotFound from "./pages/PageNotFound";
 import CityList from "./components/CityList";
 import { useEffect, useState } from "react";
+import { set } from "lodash";
 
 const BASE_URL = 'http://localhost:9000'
 
@@ -18,14 +19,17 @@ function App() {
 
 useEffect(function () {
   async function fetchCities() {
-    try {const res = await fetch('${BASE_URL}/cities');
-    const data = await res.json();
-    setCities(data);
-  } catch {
-    alert('Error fetching cities data')
-  }
-}
-}, []);
+    try {
+      setIsLoading (true);
+      const res = await fetch('${BASE_URL}/cities');
+      const data = await res.json();
+      setCities(data);
+    } catch {
+      alert('Error fetching cities data')
+    } finally {
+      setIsLoading (false)}
+    }
+  }, []);
 
 function App() {
   return (
