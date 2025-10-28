@@ -1,8 +1,8 @@
-function CityItem() {
+function CityItem(city) {
     return (
-        <div>
+        <li>
             
-        </div>
+        </li>
     )
 }
 
