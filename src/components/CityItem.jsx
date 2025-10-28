@@ -1,8 +1,6 @@
 function CityItem(city) {
     return (
-        <li>
-            
-        </li>
+        <li>city</li>
     )
 }
 
