@@ -1,7 +1,9 @@
-function CityItem(city) {
+import styles from './CityItem.module.css';
+
+function CityItem({ city } ) {
     return (
-        <li>city</li>
-    )
+        <li className={styles.cityItem}>city</li>
+    );
 }
 
 export default CityItem
