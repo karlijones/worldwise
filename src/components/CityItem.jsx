@@ -6,6 +6,7 @@ function CityItem({ city } ) {
     return (
         <li className={styles.cityItem}
         <span className={styles.emoji}>{emjoi}</span>
+        <h3 className={styles.cityName}>{cityName}</h3>
         </li>
     );
 }
