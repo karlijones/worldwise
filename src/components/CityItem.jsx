@@ -1,5 +1,13 @@
 import styles from './CityItem.module.css';
 
+const formalDate = {date} => 
+    new Intl.DateTimeFormat{"en-US", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+    }}.format(new Date(date);
+
+
 function CityItem({ city } ) {
     const {cityName, emoji, date} = city;
     
@@ -7,7 +15,7 @@ function CityItem({ city } ) {
         <li className={styles.cityItem}
         <span className={styles.emoji}>{emjoi}</span>
         <h3 className={styles.cityName}>{cityName}</h3>
-        <time className={styles.date}>{date}</time> 
+        <time className={styles.date}>{formatDate{date}}</time> 
         </li>
     );
 }
