@@ -8,7 +8,9 @@ function CountryList({ cities, isLoading }) {
 
     if (!cities.length) return <Message message="Add your first city by clicking on a city on the map" />;
 
-    const countries = [];
+    const countries = cities.reduce((arr, city) => 
+        
+        , []);
     
     return (
         <ul className={styles.countryList}>
