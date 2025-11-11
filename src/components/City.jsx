@@ -1,4 +1,12 @@
 function City() {
+    const currentCity = {
+        cityName: 'Paris',
+        emoji: '🇫🇷',
+        date: '2023-06-01',
+        notes: 'Visited the Eiffel Tower and Louvre Museum.'
+    };
+    
+    
     return (
         <div>
            <h6>City name</h6> 
