@@ -5,7 +5,8 @@ function City() {
         date: '2023-06-01',
         notes: 'Visited the Eiffel Tower and Louvre Museum.'
     };
-    
+
+    const { cityName, emoji, date, notes } = currentCity;
     
     return (
         <div>
@@ -13,6 +14,10 @@ function City() {
            <h3>
             <span>{emoji}</span> {cityName}
            </h3>
+        </div>
+
+        <div>
+            
         </div>
     )
 }
