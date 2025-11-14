@@ -15,9 +15,10 @@ function City() {
             <span>{emoji}</span> {cityName}
            </h3>
         </div>
-
+            <h6>You went to {cityName} on</h6>
+            <p>{date}</p>
         <div>
-            
+
         </div>
     )
 }
