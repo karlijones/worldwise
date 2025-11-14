@@ -16,7 +16,7 @@ function City() {
            </h3>
         </div>
             <h6>You went to {cityName} on</h6>
-            <p>{date}</p>
+            <p>{formatDate[date || null]}</p>
         <div>
 
         </div>
