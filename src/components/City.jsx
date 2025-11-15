@@ -1,4 +1,5 @@
 function City() {
+    // Temporary hardcoded data for the city
     const currentCity = {
         cityName: 'Paris',
         emoji: '🇫🇷',
