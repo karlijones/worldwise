@@ -19,9 +19,10 @@ function City() {
             <h6>You went to {cityName} on</h6>
             <p>{formatDate[date || null]}</p>
         <div>
-
+            <h6>Learn more</h6>
+            <a href={`https://en.wikipedia.org/wiki/${cityName}`}
         </div>
-    )
+    );
 }
 
 export default City
