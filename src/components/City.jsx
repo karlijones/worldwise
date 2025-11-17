@@ -24,6 +24,7 @@ function City() {
             target="_blank"
             rel="noreferrer"
             >
+            Check out {cityName} on Wikipedia &rarr;
         </div>
     );
 }
