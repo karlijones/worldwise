@@ -18,9 +18,12 @@ function City() {
         </div>
             <h6>You went to {cityName} on</h6>
             <p>{formatDate[date || null]}</p>
-        <div>
+        <div className={styles.row}>
             <h6>Learn more</h6>
             <a href={`https://en.wikipedia.org/wiki/${cityName}`}
+            target="_blank"
+            rel="noreferrer"
+            >
         </div>
     );
 }
