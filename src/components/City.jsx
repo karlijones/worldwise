@@ -1,11 +1,18 @@
+import { useParams } from "react-router";
+import styles from "./City.module.css";
+
 function City() {
     // Temporary hardcoded data for the city
     const currentCity = {
+        const x = useParams();
+        console.log(x);
+
         cityName: 'Paris',
         emoji: '🇫🇷',
         date: '2023-06-01',
         notes: 'Visited the Eiffel Tower and Louvre Museum.'
     };
+
 
     const { cityName, emoji, date, notes } = currentCity;
 
