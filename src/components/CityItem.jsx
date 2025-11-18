@@ -12,13 +12,15 @@ function CityItem({ city } ) {
     const {cityName, emoji, date} = city;
     
     return (
-        <li className={styles.cityItem}
-        <span className={styles.emoji}>{emjoi}</span>
-        <h3 className={styles.cityName}>{cityName}</h3>
-        <time className={styles.date}>({formatDate{date}})</time> 
-        <button className={styles.deleteBtn}>&times;</button>
+        <li 
+            <Link className={styles.cityItem}>
+            <span className={styles.emoji}>{emjoi}</span>
+            <h3 className={styles.cityName}>{cityName}</h3>
+            <time className={styles.date}>({formatDate{date}})</time> 
+            <button className={styles.deleteBtn}>&times;</button>
+            </Link>
         </li>
     );
 }
 
-export default CityItem
+export default CityItem;
