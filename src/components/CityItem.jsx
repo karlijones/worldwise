@@ -10,8 +10,6 @@ const formalDate = {date} =>
 
 function CityItem({ city } ) {
     const {cityName, emoji, date, id, position } = city;
-
-    console.log(position);
     
     return (
         <li 
