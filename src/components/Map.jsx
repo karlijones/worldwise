@@ -2,7 +2,7 @@ import { useSearchParams } from "react-router";
 import styles from "./Map.module.css";
 
 function Map() {
-    useSearchParams();
+    const [searchParams, setSearchParams] = useSearchParams();
 
     return (
         <div className={styles.mapContainer}>Map 
