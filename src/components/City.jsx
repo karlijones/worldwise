@@ -4,7 +4,7 @@ import styles from "./City.module.css";
 function City() {
     // Temporary hardcoded data for the city
     const currentCity = {
-        const {id} = useParams();
+        const {id} = useParams(),
         function Map() {
     const [searchParams, setSearchParams] = useSearchParams();
     const lat = searchParams.get("lat");
