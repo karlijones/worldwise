@@ -1,10 +1,15 @@
-import { useParams } from "react-router";
+import { useParams, useSearchParams } from "react-router";
 import styles from "./City.module.css";
 
 function City() {
     // Temporary hardcoded data for the city
     const currentCity = {
         const {id} = useParams();
+        function Map() {
+    const [searchParams, setSearchParams] = useSearchParams();
+    const lat = searchParams.get("lat");
+    const lng = searchParams.get("lng");
+
 
         cityName: 'Paris',
         emoji: '🇫🇷',
