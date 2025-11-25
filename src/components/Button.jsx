@@ -1,4 +1,4 @@
-function Button() {
+function Button({children}) {
     return (
         <button>
             
