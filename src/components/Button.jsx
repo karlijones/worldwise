@@ -1,4 +1,4 @@
-function Button({children}, {onClick}) {
+function Button({children, onClick, type}) {
     return (
         <button>
             
