@@ -1,6 +1,8 @@
+import { on } from "events";
+
 function Button({children, onClick, type}) {
     return (
-        <button>
+        <button onClick={onClick} type={type} >
             
         </button>
     )
