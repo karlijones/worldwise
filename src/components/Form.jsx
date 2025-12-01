@@ -1,7 +1,8 @@
 function Form() {
     return (
         <div>
-            
+            <label></label>
+            <textarea></textarea>
         </div>
     )
 }
