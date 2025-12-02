@@ -2,7 +2,7 @@ import { set } from "lodash";
 
 function Form() {
     return (
-        <div>
+        <div classname={styles.row} >
             <label></label>
             <textarea id="notes"
             onChange={(e) => setNotes(e.target.value)}
