@@ -10,8 +10,10 @@ function Form() {
             onChange={(e) => setNotes(e.target.value)}
             value={notes}
             />
-
             
+        </div>
+        <div>
+            <button className={styles.btn} type="Add">Add</button>
         </div>
     )
 }
