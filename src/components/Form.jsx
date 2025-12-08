@@ -14,7 +14,7 @@ function Form() {
         </div>
         <div>
             <button className={styles.btn} type="primary">Add</button>
-            <button type="back">&larr; Back</button> 
+            <button type="back" onClick={}>&larr; Back</button> 
         </div>
     );
 }
