@@ -2,6 +2,10 @@ import { useState } from "react";
 import Button from "./Button";
 
 function Form() {
+    const [cityName, setCityName] = useState("");
+    const [notes, setNotes] = useState("");
+    
+    
     return (
         <div classname={styles.row} >
             <label htmlFor="notes">Notes about your trip to {City}
