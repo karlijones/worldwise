@@ -16,7 +16,7 @@ function Form() {
         <div>
             <Button className={styles.btn} >
             <Button type="primary">Add</Button>
-            <Button type="back">&larr; Back</Button> 
+            <Button type="back" onClick={}>&larr; Back</Button> 
         </div>
     );
 }
