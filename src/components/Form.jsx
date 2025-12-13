@@ -4,6 +4,7 @@ import Button from "./Button";
 function Form() {
     const [cityName, setCityName] = useState("");
     const [country, setCountry] = useState("");
+    const [date, setDate] = useState("");
     const [notes, setNotes] = useState("");
     
     
