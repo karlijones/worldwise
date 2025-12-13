@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "./Button";
+import styles from "./Form.module.css";
 
 function Form() {
     const [cityName, setCityName] = useState("");
