@@ -3,8 +3,12 @@ import Button from "./Button";
 import styles from "./Form.module.css";
 
 export function convertToEmoji(countryCode) {
-    return countryCode
+    const codePoints = countryCode 
         .toUpperCase()
+        .split("")
+        .map((char) => 127397 + char.charCodeAt());
+
+    return countryCode
 
 function Form() {
     const [cityName, setCityName] = useState("");
