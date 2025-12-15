@@ -2,6 +2,10 @@ import { useState } from "react";
 import Button from "./Button";
 import styles from "./Form.module.css";
 
+export function convertToEmoji(countryCode) {
+    return countryCode
+        .toUpperCase()
+
 function Form() {
     const [cityName, setCityName] = useState("");
     const [country, setCountry] = useState("");
