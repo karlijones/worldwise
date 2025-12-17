@@ -17,8 +17,8 @@ function Form() {
     const [date, setDate] = useState("");
     const [notes, setNotes] = useState("");
     
-    
     return (
+        <div className={styles.form}>
         <div classname={styles.row} >
             <label htmlFor="notes">Notes about your trip to {City}
             </label>
