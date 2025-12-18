@@ -30,8 +30,8 @@ function Form() {
             
         </div>
         <div>
-            <Button className={styles.btn} >
-            <Button type="primary">Add</Button>
+            <Button className={styles.btn}
+             type="primary">Add</Button>
             <Button type="back" onClick={}>&larr; Back</Button> 
         </div>
     );
