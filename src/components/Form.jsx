@@ -12,9 +12,9 @@ export function convertToEmoji(countryCode) {
 }
 
 function Form() {
-    const [cityName, setCityName] = useState("");
+ const [cityName, setCityName] = useState("");
     const [country, setCountry] = useState("");
-    const [date, setDate] = useState("");
+    const [date, setDate] = useState(newDate());
     const [notes, setNotes] = useState("");
     
     return (
@@ -36,5 +36,6 @@ function Form() {
         </div>
     );
 }
+   
 
 export default Form
