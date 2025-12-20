@@ -16,9 +16,9 @@ function Form() {
     const [country, setCountry] = useState("");
     const [date, setDate] = useState(newDate());
     const [notes, setNotes] = useState("");
-    
+}
     return (
-        <div className={styles.form}>
+        <form className={styles.form}>
         <div classname={styles.row} >
             <label htmlFor="notes">Notes about your trip to {City}
             </label>
@@ -35,7 +35,6 @@ function Form() {
             <Button type="back" onClick={}>&larr; Back</Button> 
         </div>
     );
-}
    
 
 export default Form
