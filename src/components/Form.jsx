@@ -32,9 +32,9 @@ function Form() {
         <div>
             <Button className={styles.btn}
              type="primary">Add</Button>
-            <Button type="back" onClick={}>&larr; Back</Button> 
+            <Button type="back" onClick={() =>navigate()}>&larr; Back</Button> 
         </div>
     );
    
 
-export default Form
+export default Form;
