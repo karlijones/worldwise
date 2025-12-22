@@ -27,6 +27,7 @@ function Form() {
             onChange={(e) => setNotes(e.target.value)}
             value={notes}
             />
+            {/* Additional form fields for cityName, country, and date can be added here */ }
             
         </div>
         <div>
