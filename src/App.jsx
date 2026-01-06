@@ -43,8 +43,8 @@ function App() {
       <Route path="pricing" element={<Pricing />}/>
       <Route path="login" element={<Login />}/>
       <Route path="app" element={<AppLayout />}>
-        <Route index element={<CityList cities={cities} 
-          isLoading={isLoading} />} 
+        <Route index 
+        element={<Navigate to="cities"/>} 
           />
         <Route 
           path='cities' 
