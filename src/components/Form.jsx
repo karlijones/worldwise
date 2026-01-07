@@ -37,7 +37,7 @@ function Form() {
              type="primary">Add</Button>
             <Button type="back" 
             onClick={(e) =>
-            {e.preventDefault();}
+            {e.preventDefault()}
             navigate(-1)}>&larr; 
             Back</Button> 
         </div>
