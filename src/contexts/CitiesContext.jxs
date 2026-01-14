@@ -19,8 +19,10 @@ function CitiesProvider({children}) {
         } catch {
         alert('Error fetching cities data')
         } finally {
-        setIsLoading (false)}
+        setIsLoading (false);
         }
-        fetchCities();
+    }
+    fetchCities();
   }, []);
+  return <CitiesContext.Provider>{children}</CitiesContext.Provider>
 }
