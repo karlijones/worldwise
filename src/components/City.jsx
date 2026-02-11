@@ -1,12 +1,22 @@
 import { useParams, useSearchParams } from "react-router";
 import styles from "./City.module.css";
 
+const formatDate = (date =>
+    new Intl.DateTimeFormat("en", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+    }).format(new Date(date))
+);
+
+
+
 function City() {
     // Temporary hardcoded data for the city
     const currentCity = {
         const {id} = useParams();
 
-        
+
        
 
 
