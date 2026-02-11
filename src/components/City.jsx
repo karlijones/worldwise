@@ -9,21 +9,20 @@ const formatDate = (date =>
     }).format(new Date(date))
 );
 
-
-
 function City() {
     // Temporary hardcoded data for the city
     const currentCity = {
         const {id} = useParams();
-
+        
 
        
 
 
-        cityName: 'Paris',
-        emoji: '🇫🇷',
-        date: '2023-06-01',
-        notes: 'Visited the Eiffel Tower and Louvre Museum.'
+        const currentCity = {
+            cityName: "Lisbon",
+            emoji: "🇵🇹",
+            date: "2024-06-01",
+            notes: "My favorite city so far!",
     };
 
 
