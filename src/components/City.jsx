@@ -18,11 +18,11 @@ function City() {
        
 
         //TEMP DATA
-        const currentCity = {
-            cityName: "Lisbon",
-            emoji: "🇵🇹",
-            date: "2024-06-01",
-            notes: "My favorite city so far!",
+        //const currentCity = {
+            //cityName: "Lisbon",
+            //emoji: "🇵🇹",
+            //date: "2024-06-01",
+            //notes: "My favorite city so far!",
     };
 
 
