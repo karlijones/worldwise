@@ -12,12 +12,12 @@ const formatDate = (date =>
 function City() {
     // Temporary hardcoded data for the city
     const currentCity = {
-        const {id} = useParams();
+        const { id } = useParams();
+        const {getCity, currentCity} = useCities();
         
-
        
 
-
+        //TEMP DATA
         const currentCity = {
             cityName: "Lisbon",
             emoji: "🇵🇹",
