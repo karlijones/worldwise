@@ -15,7 +15,9 @@ function City() {
         const { id } = useParams();
         const {getCity, currentCity} = useCities();
         
-       
+       useEffect(function() {
+        getCity(id);
+       }, [id]);
 
         //TEMP DATA
         //const currentCity = {
