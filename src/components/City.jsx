@@ -18,25 +18,11 @@ function City() {
        useEffect(function() {
         getCity(id);
        }, [id]);
-
-        //TEMP DATA
-        //const currentCity = {
-            //cityName: "Lisbon",
-            //emoji: "🇵🇹",
-            //date: "2024-06-01",
-            //notes: "My favorite city so far!",
     };
 
 
     const { cityName, emoji, date, notes } = currentCity;
 
-    return (
-    <>
-    <h1>City {id}</h1>
-    <p>Position: {lng}, {lat}</p>;
-    </>
-    );
-    
     
     // return (
     //     <div className={styles.city}>
