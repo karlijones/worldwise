@@ -17,7 +17,7 @@ function City() {
         
        useEffect(function() {
         getCity(id);
-       }, [id, getCity]);
+       }, [id]);
 
         //TEMP DATA
         //const currentCity = {
