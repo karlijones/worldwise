@@ -29,19 +29,23 @@ function Form() {
             onChange={(e) => setNotes(e.target.value)}
             value={notes}
             />
-            {/* Additional form fields for cityName, country, and date can be added here */ }
             
         </div>
-        <div>
-            <Button className={styles.btn}
-             type="primary">Add</Button>
-            <Button type="back" 
+        <div className={styles.buttons}> 
+            <Button type="primary">Add</Button>
+            <Button 
+            type="back" 
             onClick={(e) =>
-            {e.preventDefault()}
-            navigate(-1)}>&larr; 
-            Back</Button> 
+            {e.preventDefault();
+            navigate(-1);
+            }}
+            >
+            Back
+            </Button> 
         </div>
+        </form>
     );
+}
    
 
 export default Form;
