@@ -32,15 +32,6 @@ function Form() {
         </div>
         <div className={styles.buttons}> 
             <Button type="primary">Add</Button>
-            <Button 
-            type="back" 
-            onClick={(e) =>
-            {e.preventDefault();
-            navigate(-1);
-            }}
-            >
-            Back
-            </Button> 
         </div>
         </form>
     );
