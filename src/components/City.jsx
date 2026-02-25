@@ -61,4 +61,4 @@ function City() {
      );
 }
 
-export default City
+export default City;
