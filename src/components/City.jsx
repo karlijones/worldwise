@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router";
 import { useCities } from "../context/CitiesContext";
 import {BackButton }from "./BackButton";
-import {styles} from "./City.module.css";
+import {Styles} from "./City.module.css";
 import {Spinner} from "./Spinner";
 
 const formatDate = (date =>
@@ -29,7 +29,6 @@ function City() {
 
     if (isLoading) return <Spinner />;
 
-    
      return (
          <div className={styles.city}>
              <div className={styles.row}>
@@ -44,8 +43,7 @@ function City() {
                  <p>{formatDate[date || null]}</p>
              <div className={styles.row}>
                  <h6>Learn more</h6>
-                 <a href={`https://en.wikipedia.org/wiki/${cityName}
-                    `}
+                 <a href={`https://en.wikipedia.org/wiki/${cityName}`}
                  target="_blank"
                  rel="noreferrer"
                  >
@@ -58,7 +56,7 @@ function City() {
              </div>
              </div>
          </div>
-     );
+        );
 }
 
 export default City;
