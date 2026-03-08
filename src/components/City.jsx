@@ -1,21 +1,18 @@
 import { useEffect } from "react";
 import { useParams } from "react-router";
 import { useCities } from "../context/CitiesContext";
-import {BackButton }from "./BackButton";
-import {Styles} from "./City.module.css";
-import {Spinner} from "./Spinner";
+import BackButton from "./BackButton";
+import styles from "./City.module.css";
+import Spinner from "./Spinner";
 
 const formatDate = (date =>
     new Intl.DateTimeFormat("en", {
         day: "numeric",
         month: "long",
         year: "numeric",
-    }).format(new Date(date))
-);
+    }).format(new Date(date));
 
 function City() {
-    // Temporary hardcoded data for the city
-    const currentCity = {
         const { id } = useParams();
         const {getCity, currentCity} = useCities();
         
