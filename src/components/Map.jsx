@@ -12,8 +12,6 @@ function Map() {
         <div className={styles.mapContainer} onClick={() => 
         navigate("form")}>
             
-                Change pos
-            </button>
         </div>
     );
 }
