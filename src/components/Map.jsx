@@ -5,6 +5,7 @@ import styles from "./Map.module.css";
 
 function Map() {
     const navigate = useNavigate();
+    const mapPosition = useState([40, 0]);
 
     const [searchParams, setSearchParams] = useSearchParams();
     const lat = searchParams.get("lat");
