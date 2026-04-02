@@ -13,9 +13,12 @@ function Map() {
     const lng = searchParams.get("lng");
 
     return (
-        <div className={styles.mapContainer} onClick={() => 
-        navigate("form")}>
-            <MapContainer center={mapPosition} zoom={13} scrollWheelZoom={false} style={{ height: "100%", width: "100%" }}>
+        <div className={styles.mapContainer}
+            <MapContainer 
+            center={mapPosition} 
+            zoom={13} 
+            scrollWheelZoom={false} 
+            style={{ height: "100%", width: "100%" }}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
