@@ -17,7 +17,7 @@ function Map() {
             <MapContainer 
             center={mapPosition} 
             zoom={13} 
-            scrollWheelZoom={false} 
+            scrollWheelZoom={true} 
             style={{ height: "100%", width: "100%" }}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
