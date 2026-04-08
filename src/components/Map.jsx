@@ -18,7 +18,7 @@ function Map() {
     const lng = searchParams.get("lng");
 
     return (
-        <div className={styles.mapContainer}
+    <div className={styles.mapContainer}>
             <MapContainer 
             center={mapPosition} 
             zoom={13} 
@@ -28,11 +28,12 @@ function Map() {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                {cities.map((city) => (<Marker position={[city.lat, city.lng]} key={city.id} eventHandlers={{>
+                {cities.map((city) => (
+                    <Marker position={[city.position.lat, city.position.lng]}> 
                     <Popup>
                         A pretty CSS3 popup. <br /> Easily customizable.
                     </Popup>
-                </Marker>)}
+                </Marker>))}
             </MapContainer>
         </div>
     );
