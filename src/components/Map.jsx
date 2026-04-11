@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import styles from "./Map.module.css";
 import { useState } from "react";
 import { useCities } from "../context/CitiesContext";
+import { map } from "lodash";
 
 function Map() {
     const navigate = useNavigate();
@@ -14,14 +15,14 @@ function Map() {
 
     const [searchParams, setSearchParams] = useSearchParams();
 
-    const lat = searchParams.get("lat");
-    const lng = searchParams.get("lng");
+    const mapLat = searchParams.get("lat");
+    const mapLng = searchParams.get("lng");
 
     return (
     <div className={styles.mapContainer}>
             //<MapContainer 
-            center={mapPosition} 
-            zoom={13} 
+            center={[mapLat, mapLng]} 
+            zoom={6} 
             scrollWheelZoom={true} 
             style={{ height: "100%", width: "100%" }}>
                 <TileLayer
